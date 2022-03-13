@@ -1,10 +1,11 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="CheckEmptyScriptTag" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PMDApex" enabled="true" level="WARNING" enabled_by_default="true">
-      <option name="pmdPath" value="$PROJECT_DIR$/../../suse-it-salesforce2/lib/pmd-bin-6.40.0" />
-      <option name="rulesetPath" value="$PROJECT_DIR$/../../suse-it-salesforce2/lib/pmd-bin-6.40.0/rules/pmdRuleSet.xml" />
+      <option name="pmdPath" value="$USER_HOME$/suse-it-salesforce2/lib/pmd-bin-6.40.0" />
+      <option name="rulesetPath" value="$USER_HOME$/suse-it-salesforce2/lib/pmd-bin-6.40.0/rules/pmdRuleSet.xml" />
     </inspection_tool>
   </profile>
 </component>
