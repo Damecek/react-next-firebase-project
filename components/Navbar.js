@@ -1,8 +1,12 @@
 import React from 'react';
+import {useContext} from 'react';
+
 import Link from 'next/link';
 
+import {UserContext} from '../lib/context';
+
 function Navbar(props) {
-    const {user, username} = {username:'asd'};
+    const {user, username} = useContext(UserContext);
     return (
         <nav className="navbar">
             <ul>
@@ -11,7 +15,7 @@ function Navbar(props) {
                         <button className="btn-logo">FEED</button>
                     </Link>
                 </li>
-                {username && (
+                {user && (
                     <>
                         <li className="push-left">
                             <Link href="/admin">
@@ -25,7 +29,7 @@ function Navbar(props) {
                         </li>
                     </>
                 )}
-                {!username && (
+                {!user && (
                     <li>
                         <Link href="/enter">
                             <button className="btn-blue">Log In</button>
