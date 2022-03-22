@@ -1,8 +1,12 @@
-import React from 'react';
+import AuthCheck from '../../components/AuthCheck';
 
 function AdminPostsPage(props) {
     return (
-        <main>admin</main>
+        <main>
+            <AuthCheck>
+                admin
+            </AuthCheck>
+        </main>
     );
 }
 
