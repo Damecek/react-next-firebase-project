@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../../styles/Post.module.css';
 import {firestore, getUserWithUsername, postToJSON} from '../../lib/firebase';
 import {useDocumentData} from 'react-firebase-hooks/firestore';
 import PostContent from '../../components/PostContent';
@@ -42,7 +43,7 @@ function Post(props) {
     const post = realtimePost || props.post;
 
     return (
-        <main>
+        <main className={styles.container}>
 
             <section>
                 <PostContent post={post}/>
